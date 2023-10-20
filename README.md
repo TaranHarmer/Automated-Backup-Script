@@ -12,7 +12,6 @@ The **Automatic Backup Script** is a versatile tool designed to automate the pro
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [Scheduling](#scheduling)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
@@ -38,16 +37,19 @@ Before using the Automatic Backup Script, make sure you have the following prere
 
    ```bash
    git clone https://github.com/your-username/Automatic-Backup-Script.git
+   ```
 
 2. Navigate to the project directory:
 
    ```bash
    cd Automatic-Backup-Script
+   ```
 
 4. Ensure that the shell script is executable:
 
    ```bash
    chmod +x backup.sh
+   ```
 
 ## Usage
 
@@ -60,6 +62,7 @@ Before using the Automatic Backup Script, make sure you have the following prere
 
    ```bash
    ./backup.sh
+   ```
 
 3. The program will automatically create a backup archive of your specified files and directories.
 
@@ -76,5 +79,16 @@ In the **'backup.sh'** script, you can customize the following settings:
 ## Scheduling
 
 To automate the backup process on a regular basis, you can use cron jobs on Linux. Here's an example of scheduling daily backups at midnight:
-   
 
+   ```bash
+   # Schedule a daily backup at midnight
+   0 0 * * * /path/to/backup.sh-
+   ```
+
+Customize the cron job based on your preferred backup schedule.
+
+## License
+This project is licensed under the MIT License.
+
+
+Please replace "your-username" and "/path/to/backup.sh" with your actual GitHub username and the path to your backup script, respectively.
