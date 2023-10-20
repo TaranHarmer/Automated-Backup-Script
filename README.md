@@ -39,5 +39,42 @@ Before using the Automatic Backup Script, make sure you have the following prere
    ```bash
    git clone https://github.com/your-username/Automatic-Backup-Script.git
 
+2. Navigate to the project directory:
 
+   ```bash
+   cd Automatic-Backup-Script
+
+4. Ensure that the shell script is executable:
+
+   ```bash
+   chmod +x backup.sh
+
+## Usage
+
+1. Open the **'backup.sh'** script and configure the following settings as needed:
+- Specify the source directories and files you want to back up.
+- Define the destination directory where backup archives will be stored.
+- Set backup retention policies, such as the number of backups to keep and the maximum age of backups.
+
+2. Run the script to create a backup:
+
+   ```bash
+   ./backup.sh
+
+3. The program will automatically create a backup archive of your specified files and directories.
+
+4. The backup archive will be stored in the destination directory.
+
+## Configuration
+
+In the **'backup.sh'** script, you can customize the following settings:
+- **Source Directories**: Define the directories and files to be included in the backup.
+- **Destination Directory**: Specify the directory where backup archives will be saved.
+- **Backup Retention**: Set the number of backup versions to keep and the maximum age of backups. Older backups will be automatically removed based on these settings.
+- **Data Compression**: Choose the compression method (e.g., tar and gzip) to reduce backup archive size.
+
+## Scheduling
+
+To automate the backup process on a regular basis, you can use cron jobs on Linux. Here's an example of scheduling daily backups at midnight:
    
+
